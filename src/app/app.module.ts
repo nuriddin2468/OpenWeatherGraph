@@ -10,7 +10,7 @@ import { GraphComponent } from './graph/graph.component';
     GraphComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

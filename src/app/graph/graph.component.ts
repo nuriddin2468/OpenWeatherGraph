@@ -18,11 +18,11 @@ export class GraphComponent implements OnInit {
     const temperatures: any[] = [];
     const windspeed: any[] = [];
     axios.get('https://api.openweathermap.org/data/2.5/onecall', {
-      data: {
+      params: {
         lat: 41.3082,
         lon: 69.2598,
         exclude: 'minutely,hourly',
-        appid: 'bd33c4f450497c9879e1fd8106b5a17b',
+        appid: '6da25ee14f7831e52f0d5726906635d6',
       }
     }).then(res => {
       res.data.daily.forEach((value: any) => {
