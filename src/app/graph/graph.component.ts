@@ -51,18 +51,18 @@ export class GraphComponent implements OnInit {
       yAxis: [
         {
           title: {
-            text: 'Температура'
+            text: 'Температура (C°)'
           }
         },
         {
           title: {
-            text: 'Скорость ветра'
+            text: 'Скорость ветра (m/s)'
           },
           opposite: true
         },
         {
           title: {
-            text: 'Давление'
+            text: 'Давление (hPa)'
           },
           opposite: true
         }
@@ -70,19 +70,19 @@ export class GraphComponent implements OnInit {
 
       series: [
         {
-          name: 'Temperature',
+          name: 'Temperature (C°)',
           type: 'line',
           yAxis: 0,
           data: temperatures
         },
         {
-          name: 'Wind speed',
+          name: 'Wind speed (m/s)',
           type: 'area',
           yAxis: 1,
           data: windspeed,
         },
         {
-          name: 'Pressure',
+          name: 'Pressure (hPa)',
           type: 'line',
           yAxis: 2,
           data: pressures
